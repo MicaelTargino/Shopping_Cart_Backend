@@ -7,7 +7,7 @@ from core.views import ListViewSet, ItemViewSet
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-router.register(r'lists', ListViewSet)
+router.register(r'lists', ListViewSet, basename='list')
 router.register(r'items', ItemViewSet)
 
 urlpatterns = [
